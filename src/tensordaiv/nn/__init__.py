@@ -8,8 +8,8 @@ class Model:
         input_example = Input(shape=self.input_size)
         return models.Model(inputs=input_example, outputs=self.call(input_example))
 
-    def __init__(self, input_size):
+    def __init__(self, input_size, *args, **kwargs):
         self.input_size = input_size
 
-    def call(self, inputs, silent=False):
+    def call(self, *args, **kwargs):
         pass
