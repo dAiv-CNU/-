@@ -1,2 +1,6 @@
 from tensorflow import *
-from . import nn
+try:
+    tf_nn = nn
+    del nn
+finally:
+    from . import nn
