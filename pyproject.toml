@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "tensordaiv"
+version = "0.1.0"
+description = "tensorflow wrapper for dAiv's lecture"
+authors = ["dAiv <cnudaiv@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+packages = [
+    {include = "tensordaiv", from = "src"}
+]
+
+[tool.poetry.dependencies]
+python = "3.9"
+tensorflow = "^2.16.1"
+keras = "^3.3.3"
+sklearn = "^0.0.post12"
+matplotlib = "^3.9.0"
+rich = "^13.7.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
